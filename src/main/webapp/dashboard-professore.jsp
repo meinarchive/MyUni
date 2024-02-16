@@ -14,7 +14,7 @@
 		<nav class="my-4 mb-10 bg-[#f7f7f7] px-6 py-4 shadow">
 			<div class="flex justify-between items-center">
 				<div class="text-lg text-gray-700 font-bold">
-					<a href="dashboardProfessore" class="flex items-center"> <svg
+					<a href="." class="flex items-center"> <svg
 							xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 							viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -33,8 +33,11 @@
 						class="text-gray-700 text-sm font-bold mx-4 hover:text-green-500">Profilo</a>
 					<a href="#"
 						class="text-gray-700 text-sm font-bold mx-4 hover:text-green-500">Dettagli</a>
-					<a href="loginProfessore"
-						class="ml-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Log out</a>
+					<div>
+					<form action="${pageContext.request.contextPath}/Logout" method="POST">
+						<button type="submit" class="ml-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Log out</button>
+					</form>
+					</div>
 				</div>
 			</div>
 		</nav>

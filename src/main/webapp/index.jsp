@@ -108,15 +108,13 @@
 	<section class="py-12 px-4">
 		<div class="max-w-4xl mx-auto text-center">
 			<h2 class="text-3xl font-bold text-gray-800">Chi siamo</h2>
-			<p class="mt-4 text-lg text-gray-600">Lorem ipsum dolor sit amet,
-				consectetur adipiscing elit. In vitae consequat augue. Etiam
-				facilisis nisl vitae ipsum ultrices, volutpat rhoncus tortor
-				elementum. Cras non blandit ex, vitae tristique orci. Vestibulum sed
-				laoreet ex. Phasellus scelerisque, nibh eget efficitur sollicitudin,
-				lacus neque vulputate est, id hendrerit enim nulla non lectus.
-				Aliquam risus nulla, eleifend at condimentum ac, iaculis in purus.
-				Aliquam a lacus orci. Sed cursus rhoncus mi, sed porta arcu gravida
-				viverra.</p>
+			<p class="mt-4 text-lg text-gray-600">In un mondo in rapida
+				evoluzione, la nostra universita' si erge come faro dell'istruzione
+				superiore, plasmando il futuro attraverso l'illuminazione delle
+				menti e la coltivazione delle potenzialità individuali. Fondata con
+				la visione di ispirare, innovare e influenzare positivamente, siamo
+				un'istituzione che abbraccia la sfida di preparare gli studenti per
+				una società dinamica e globalizzata.</p>
 		</div>
 	</section>
 	<section class="py-12 px-4 bg-gray-100">
@@ -126,25 +124,36 @@
 			<div
 				class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 				<div class="bg-white shadow rounded-lg p-6">
-					<h3 class="text-xl font-bold text-gray-800">Titolo Corso</h3>
-					<p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit. In vitae consequat augue.</p>
+					<h3 class="text-xl font-bold text-gray-800">Intelligenza
+						Artificiale</h3>
+					<p class="text-gray-600 mt-2">Il corso di Intelligenza
+						Artificiale Applicata offre agli studenti una panoramica avanzata
+						delle applicazioni pratiche dell'intelligenza artificiale (IA).
+						Gli studenti esploreranno algoritmi di apprendimento automatico e
+						reti neurali.</p>
 					<a href="#"
 						class="mt-4 inline-block bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700">Richiedi
 						informazioni</a>
 				</div>
 				<div class="bg-white shadow rounded-lg p-6">
-					<h3 class="text-xl font-bold text-gray-800">Titolo Corso</h3>
-					<p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit. In vitae consequat augue.</p>
+					<h3 class="text-xl font-bold text-gray-800">Ingegneria
+						Informatica</h3>
+					<p class="text-gray-600 mt-2">Il corso di Ingegneria del
+						Software Avanzata è progettato per approfondire la comprensione
+						degli studenti dei principi chiave e delle pratiche avanzate nella
+						progettazione,sviluppo e manutenzione di sistemi software
+						complessi.</p>
 					<a href="#"
 						class="mt-4 inline-block bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700">Richiedi
 						informazioni</a>
 				</div>
 				<div class="bg-white shadow rounded-lg p-6">
-					<h3 class="text-xl font-bold text-gray-800">Titolo Corso</h3>
-					<p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit. In vitae consequat augue.</p>
+					<h3 class="text-xl font-bold text-gray-800">Ingegneria
+						Meccanica</h3>
+					<p class="text-gray-600 mt-2">Il corso di Ingegneria Meccanica
+						offre agli studenti una formazione completa nell'ambito
+						dell'ingegneria,con un'enfasi sui principi meccanici. Gli studenti
+						acquisiscono competenze per la progettazione di sistemi meccanici.</p>
 					<a href="#"
 						class="mt-4 inline-block bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700">Richiedi
 						informazioni</a>

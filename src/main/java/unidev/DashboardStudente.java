@@ -44,6 +44,7 @@ public class DashboardStudente extends HttpServlet {
 		request.setAttribute("registrazioni", registrazioni);
 		request.setAttribute("corsi", corsi);
 		request.setAttribute("corsoToAppelloMap", corsoToAppelloMap);
+		request.getSession().setAttribute("userType", "studente");
 		request.getRequestDispatcher("/dashboard-studente.jsp").forward(request, response);
 	}
 

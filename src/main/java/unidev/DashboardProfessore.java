@@ -39,6 +39,7 @@ public class DashboardProfessore extends HttpServlet {
 
 		request.setAttribute("corsi", corsi);
 		request.setAttribute("appelliPerCorso", appelliPerCorso);
+		request.getSession().setAttribute("userType", "professore");
 		request.getRequestDispatcher("/dashboard-professore.jsp").forward(request, response);
 	}
 

@@ -8,7 +8,7 @@
 <title>Login Studente</title>
 </head>
 <body class="h-screen flex flex-col justify-center items-center">
-	<a href=".">
+	<a href="home">
 		<h1 class="text-center text-gray-500 text-2xl">Portale Myuni</h1>
 	</a>
 	<p class="font-bold text-sm text-gray-400 text-2xl mb-2">MyUni|
