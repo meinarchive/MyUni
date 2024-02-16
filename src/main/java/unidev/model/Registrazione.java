@@ -6,14 +6,7 @@ public class Registrazione {
 	private int appello_id;
 	private String stato;
 	private String corso_titolo;
-
-	public Registrazione(int registrazione_id, int studente_id, int appello_id, String stato, String corso_titolo) {
-		this.registrazione_id = registrazione_id;
-		this.studente_id = studente_id;
-		this.appello_id = appello_id;
-		this.stato = stato;
-		this.corso_titolo = corso_titolo;
-	}
+	private String studentName;
 
 	public Registrazione(int registrazione_id, int studente_id, int appello_id, String stato) {
 		super();
@@ -21,6 +14,16 @@ public class Registrazione {
 		this.studente_id = studente_id;
 		this.appello_id = appello_id;
 		this.stato = stato;
+	}
+
+	public Registrazione(int registrazione_id, int studente_id, int appello_id, String stato, String corso_titolo, String studentName) {
+		super();
+		this.registrazione_id = registrazione_id;
+		this.studente_id = studente_id;
+		this.appello_id = appello_id;
+		this.stato = stato;
+		this.corso_titolo = corso_titolo;
+		this.studentName = studentName;
 	}
 
 	public int getRegistrazione_id() {
@@ -61,6 +64,14 @@ public class Registrazione {
 
 	public void setCorso_titolo(String corso_titolo) {
 		this.corso_titolo = corso_titolo;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
 	}
 
 }

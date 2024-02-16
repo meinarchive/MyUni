@@ -78,23 +78,35 @@
 					boolean isRegistrato = appelliRegistrati.contains(appelloId);
 				%>
 				<tr class="bg-white border-b hover:bg-gray-50">
-					<td class="border px-4 py-2"><%=corso.getCorso_id()%></td>
-					<td class="border px-4 py-2"><%=corso.getTitolo()%></td>
-					<td class="border px-4 py-2"><%=corso.getDescrizione()%></td>
-					<td class="border px-4 py-2">
+					<td class="border px-4 py-4"><%=corso.getCorso_id()%></td>
+					<td class="border px-4 py-4"><%=corso.getTitolo()%></td>
+					<td class="border px-4 py-4"><%=corso.getDescrizione()%></td>
+					<td class="border px-4 py-4">
+						<%
+						if (appelloId != null && !isRegistrato) {
+						%>
 						<form action="RegistraAppello" method="post">
 							<input type="hidden" name="appello_id" value="<%=appelloId%>" />
-							<button type="submit" <%=isRegistrato ? "disabled" : ""%>
-								class="<%=isRegistrato ? "bg-blue-300 hover:bg-gray-500 cursor-not-allowed" : "bg-blue-500 hover:bg-blue-700"%> text-white font-bold py-2 px-4 rounded">
-								<%=isRegistrato ? "Registrato" : "Registrati"%>
-							</button>
-						</form>
-
+							<button type="submit"
+								class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+								Registrati</button>
+						</form> <%
+ } else if (isRegistrato) {
+ %> <span
+						class="bg-blue-300 text-white font-bold py-2 px-4 rounded cursor-not-allowed">
+							Registrato </span> <%
+ } else {
+ %> <span
+						class="text-gray-500 font-bold py-2 px-4"> Nessun appello
+							disponibile </span> <%
+ }
+ %>
 					</td>
 				</tr>
 				<%
 				}
 				%>
+
 			</tbody>
 		</table>
 		<%

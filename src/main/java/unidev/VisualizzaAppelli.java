@@ -38,13 +38,16 @@ public class VisualizzaAppelli extends HttpServlet {
 
 	private List<Registrazione> getRegistrazioni(String appelloId) {
 		List<Registrazione> registrazioni = new ArrayList<>();
-		try (Connection conn = DatabaseConnector.getConnection();
-				PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Registrazioni WHERE appello_id = ?")) {
+		String sql = "SELECT Registrazioni.*, Studenti.nome, Studenti.cognome FROM Registrazioni "
+				+ "JOIN Studenti ON Registrazioni.studente_id = Studenti.studente_id " + "WHERE appello_id = ?";
+		try (Connection conn = DatabaseConnector.getConnection(); PreparedStatement stmt = conn.prepareStatement(sql)) {
 			stmt.setInt(1, Integer.parseInt(appelloId));
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
+				String fullName = rs.getString("nome") + " " + rs.getString("cognome");
 				Registrazione registrazione = new Registrazione(rs.getInt("registrazione_id"), rs.getInt("studente_id"),
-						rs.getInt("appello_id"), rs.getString("stato"));
+						rs.getInt("appello_id"), rs.getString("stato"), "", fullName); 
+																					
 				registrazioni.add(registrazione);
 			}
 		} catch (SQLException e) {

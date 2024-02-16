@@ -56,7 +56,7 @@ public class DashboardStudente extends HttpServlet {
 			try (ResultSet rs = stmt.executeQuery()) {
 				while (rs.next()) {
 					Registrazione registrazione = new Registrazione(rs.getInt("registrazione_id"), studenteId,
-							rs.getInt("appello_id"), rs.getString("stato"), rs.getString("corso_titolo"));
+							rs.getInt("appello_id"), rs.getString("stato"), rs.getString("corso_titolo"), "");
 					registrazioni.add(registrazione);
 				}
 			}

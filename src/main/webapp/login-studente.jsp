@@ -8,7 +8,9 @@
 <title>Login Studente</title>
 </head>
 <body class="h-screen flex flex-col justify-center items-center">
-	<h1 class="text-center text-gray-500 text-2xl">Portale Myuni</h1>
+	<a href=".">
+		<h1 class="text-center text-gray-500 text-2xl">Portale Myuni</h1>
+	</a>
 	<p class="font-bold text-sm text-gray-400 text-2xl mb-2">MyUni|
 		Studente</p>
 	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

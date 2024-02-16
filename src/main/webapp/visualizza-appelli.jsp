@@ -52,6 +52,7 @@
 				<tr class="bg-green-500 text-white">
 					<th class="px-4 py-2">ID Registrazione</th>
 					<th class="px-4 py-2">ID Studente</th>
+					<th class="px-4 py-2">Nome Studente</th>
 					<th class="px-4 py-2">ID Appello</th>
 					<th class="px-4 py-2">Stato</th>
 				</tr>
@@ -63,6 +64,7 @@
 				<tr class="bg-white border-b hover:bg-gray-50">
 					<td class="border px-4 py-2"><%=registrazione.getRegistrazione_id()%></td>
 					<td class="border px-4 py-2"><%=registrazione.getStudente_id()%></td>
+					<td class="border px-4 py-2"><%=registrazione.getStudentName()%></td>
 					<td class="border px-4 py-2"><%=registrazione.getAppello_id()%></td>
 					<td class="border px-4 py-2"><%=registrazione.getStato()%></td>
 				</tr>
